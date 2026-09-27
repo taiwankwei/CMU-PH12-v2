@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>秋高北投漫行・第二版</title>
+  <link rel="stylesheet" href="style.css?v=20260927-v2-abstract">
+</head>
+<body>
+
+  <!-- ═══ THEME TOGGLE BUTTON ═══ -->
+  <button id="theme-toggle" class="theme-toggle-btn" aria-label="切換深淺色模式">
+    <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Moon icon path by default -->
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </button>
+
+  <!-- ═══ HERO ═══ -->
+  <header class="hero">
+    <div class="literary-hero-bg" aria-hidden="true">
+      <img src="beitou-autumn-abstract-v2.png" alt="" />
+      <span></span>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <span class="hero-shape shape-sun"></span>
+      <span class="hero-shape shape-moon"></span>
+      <span class="hero-shape shape-blue-dot"></span>
+      <span class="hero-shape shape-yellow-dot"></span>
+      <span class="hero-shape shape-red-pill"></span>
+      <span class="hero-shape shape-blue-moon"></span>
+      <span class="hero-star star-one">✦</span>
+      <span class="hero-star star-two">✳</span>
+      <span class="hero-eye eye-one"><i></i></span>
+      <span class="hero-eye eye-two"><i></i></span>
+      <span class="hero-figure"><i class="figure-eye"></i><i class="figure-body"></i></span>
+    </div>
+    <div class="hero-content">
+      <div class="hero-date"><span>聚會日期</span><strong>2026.11.28（六）</strong></div>
+      <p class="hero-kicker">Autumn in Beitou</p>
+      <h1 class="hero-title"><span>秋日</span><span>北投散策</span></h1>
+      <p class="hero-invitation">風起，落羽松漸染一身緋紅。<br>赴一場北投之約，沿著溫泉與老街慢慢走；<br>把久別的話，留給一杯咖啡的時間。</p>
+      <p class="hero-subtitle">山色漸紅 · 舊友重逢 · 緩步北投</p>
+      <button id="hero-register-btn" class="hero-register-btn">立即報名及點餐</button>
+    </div>
+  </header>
+
+  <!-- ═══ MAIN CONTENT ═══ -->
+  <main class="container">
+
+    <!-- ═══ TAB NAVIGATION ═══ -->
+    <div class="tab-nav-wrapper">
+      <div id="tab-nav" class="tab-nav-container">
+        <button class="tab-btn active" data-tab="schedule">漫遊行程</button>
+        <button class="tab-btn" data-tab="village">時代眷村情</button>
+        <button class="tab-btn" data-tab="hotspring">溫泉博物館</button>
+        <button class="tab-btn" data-tab="menu">午餐饗宴</button>
+        <button class="tab-btn" data-tab="eco">離塵不離城</button>
+        <button class="tab-btn" data-tab="attractions">北投景點</button>
+      </div>
+    </div>
+
+    <!-- ═══ TABS SECTION ═══ -->
+    <div class="content-area">
+
+      <!-- ─── TAB: SCHEDULE ─── -->
+      <div id="tab-schedule" class="tab-content active">
+        <div class="schedule-list">
+          
+          <div class="schedule-item">
+            <div class="sched-time-col">
+              <span class="sched-time">10:00</span>
+              <div class="sched-line"></div>
+            </div>
+            <div class="sched-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="sched-content-box">
+              <h4 class="sched-title">集合出發</h4>
+              <p class="sched-desc">準備開啟一天的探索之旅，請準時集合。</p>
+              <p class="sched-highlight">捷運新北投站1號出口</p>
+            </div>
+          </div>
+
+          <div class="schedule-item">
+            <div class="sched-time-col">
+              <span class="sched-time">10:10</span>
+              <div class="sched-line"></div>
+            </div>
+            <div class="sched-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 20v-4c0-.6-.4-1-1-1h-2c-.6 0-1 .4-1 1v4"/><path d="M4 20V9.5a2 2 0 0 1 .86-1.64l7-4.86a2 2 0 0 1 2.28 0l7 4.86A2 2 0 0 1 22 9.5V20"/><path d="M15 20v-3"/><path d="M9 20v-3"/></svg>
+            </div>
+            <div class="sched-content-box">
+              <h4 class="sched-title">北投探索趣</h4>
+              <p class="sched-desc">走訪中心新村與溫泉博物館，回憶老眷村與溫泉古蹟之美。</p>
+            </div>
+          </div>
+
+          <div class="schedule-item clickable" onclick="setActiveTab('menu')">
+            <div class="sched-time-col">
+              <span class="sched-time">12:00</span>
+              <div class="sched-line"></div>
+            </div>
+            <div class="sched-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+            </div>
+            <div class="sched-content-box">
+              <h4 class="sched-title">
+                午餐饗宴
+                <svg class="sched-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </h4>
+              <p class="sched-desc">前往對味廚房「銀光食驗室」，享用高品質職人健康料理。</p>
+            </div>
+          </div>
+
+
+
+          <div class="schedule-item clickable" onclick="setActiveTab('eco')">
+            <div class="sched-time-col">
+              <span class="sched-time">14:00</span>
+              <div class="sched-line"></div>
+            </div>
+            <div class="sched-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14h.01"/><path d="M7 7h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3"/><path d="M11 3h3"/><path d="M12 3v2.5M8 21v-4a4 4 0 0 1 4-4 4 4 0 0 1 4 4v4"/><path d="M5 14c3.7 0 5.7-1 9-1s6.8 1 9 1"/></svg>
+            </div>
+            <div class="sched-content-box">
+              <h4 class="sched-title">
+                離塵不離城
+                <svg class="sched-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </h4>
+              <p class="sched-desc">享受樹比人多的舒適綠色環境，伴隨小河悠然流淌的舒暢時光。</p>
+            </div>
+          </div>
+
+          <div class="schedule-item">
+            <div class="sched-time-col">
+              <span class="sched-time">15:30</span>
+            </div>
+            <div class="sched-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            </div>
+            <div class="sched-content-box">
+              <h4 class="sched-title">賦歸</h4>
+              <p class="sched-desc">帶著滿滿的回憶與祝福，平安踏上溫馨的歸途。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- ─── TAB: VILLAGE ─── -->
+      <div id="tab-village" class="tab-content">
+        <div class="hiking-wrapper">
+          <h2 class="kids-title" style="color:var(--orange);">時代眷村情</h2>
+          
+          <div class="village-grid">
+            <div class="village-info-col">
+              <p class="hiking-detail-text" style="font-size:0.95rem;">
+                北投中心新村是國防部通過全臺 13 處眷村保存區之一，也是臺北市少數僅存規模完整之眷村，更為全臺唯一的「溫泉軍醫眷村」。眷舍與周邊的三軍總醫院北投分院有著密切關聯，結合了北投歷史脈絡、溫泉療養文化與居民的生活記憶。
+                <br><br>
+                透過聚落活化維運，中心新村將納入「文化永續發展」的概念，結合歷史空間的再利用與展覽形式，打造特色文創交流平台。串聯新北投自然與人文景點，向遊客訴說北投多元且精彩的社區故事。
+              </p>
+              
+              <div class="feature-list">
+                <div class="feature-item">
+                  <div class="feature-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="feature-title">全台唯一溫泉軍醫眷村</h4>
+                    <p class="feature-desc">完整保存不同時期的日式木造與水泥眷舍建築，融合特有溫泉文化脈絡。</p>
+                  </div>
+                </div>
+                
+                <div class="feature-item">
+                  <div class="feature-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="feature-title">文化永續活化基地</h4>
+                    <p class="feature-desc">透過空間再造與歷史展覽，建構跨世代理解與多元交流的共享平台。</p>
+                  </div>
+                </div>
+                
+                <div class="feature-item">
+                  <div class="feature-icon-box">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  </div>
+                  <div>
+                    <h4 class="feature-title">在地文史故事據點</h4>
+                    <p class="feature-desc">串聯起周邊自然人文觀光景點，生動展示北投眷村人的社區故事記憶。</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="https://www.beitouheartvillage.taipei/" target="_blank" rel="noopener noreferrer" class="btn-primary btn-orange">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                前往中心新村官網
+              </a>
+            </div>
+
+            <div class="map-card-border">
+              <iframe src="https://maps.google.com/maps?saddr=新北投捷運站&daddr=北投中心新村&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TAB: HOTSPRING ─── -->
+      <div id="tab-hotspring" class="tab-content">
+        <div class="hiking-wrapper">
+          <h2 class="kids-title" style="color:var(--cyan);">北投溫泉博物館</h2>
+          <p class="hiking-subtitle" style="color:var(--text-muted); font-size:0.9rem; margin-bottom: 24px; border-left: 4px solid var(--cyan); padding-left:12px;">建於 1913 年 · 全台最大日式公共浴場 · 國定古蹟</p>
+          
+          <div class="village-grid">
+            <div class="village-info-col">
+              <p class="hiking-detail-text" style="font-size:0.95rem;">
+                北投溫泉博物館建於 1913 年（日治大正二年），前身為「北投公共浴場」。這棟融合了英國都鐸式半木造與羅馬圓拱式紅磚風格的洋樓建築，在當時是東亞最大的公共溫泉浴場。
+                <br><br>
+                戰後曾經荒廢，但在 1990 年代在北投在地國小師生與居民的聯署陳情推動下，成功搶救並被核定為市定古蹟（後升格為國定古蹟）。經修繕後於 1998 年作為溫泉博物館重新開館，成為北投溫泉鄉發展的靈魂與文化守護基地。
+              </p>
+              
+              <div class="feature-list">
+                <div class="feature-item">
+                  <div class="feature-icon-box feature-icon-cyan">
+                    <span>♨️</span>
+                  </div>
+                  <div>
+                    <h4 class="feature-title">大浴池與圓拱廊</h4>
+                    <p class="feature-desc">一樓宏偉的羅馬式大浴池旁矗立著列柱拱廊，彩繪玻璃透入柔美光影。</p>
+                  </div>
+                </div>
+                
+                <div class="feature-item">
+                  <div class="feature-icon-box feature-icon-cyan">
+                    <span>🏛️</span>
+                  </div>
+                  <div>
+                    <h4 class="feature-title">榻榻米大廳與木造大涼亭</h4>
+                    <p class="feature-desc">二樓設有廣闊的榻榻米大廳，曾是溫泉浴後品茗、眺望北投溪的休憩場所。</p>
+                  </div>
+                </div>
+                
+                <div class="feature-item">
+                  <div class="feature-icon-box feature-icon-cyan">
+                    <span>📍</span>
+                  </div>
+                  <div>
+                    <h4 class="feature-title">參觀資訊</h4>
+                    <p class="feature-desc">週二至週日 09:00-17:00 開放參觀（週一休館），免費入場參觀。</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="https://hotspringmuseum.taipei/" target="_blank" rel="noopener noreferrer" class="btn-primary btn-cyan">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                前往溫泉博物館官網
+              </a>
+            </div>
+
+            <div class="map-card-border">
+              <iframe src="https://maps.google.com/maps?saddr=新北投捷運站&daddr=北投溫泉博物館&t=&z=16&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <!-- YouTube 影片展示 -->
+          <div class="video-section">
+            <h3 class="video-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color: #ef4444;"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              影片導覽介紹
+            </h3>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/R_R5OJuRzyw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TAB: MENU ─── -->
+      <div id="tab-menu" class="tab-content">
+        
+        <!-- 銀光食驗室招牌 -->
+        <div class="menu-hero">
+          <div class="menu-hero-grid">
+            <div>
+              <h2 class="menu-hero-title">銀光食驗室</h2>
+              <p class="menu-hero-subtitle">「 品嚐一盤真正好食材做的健康料理 」</p>
+              <div class="menu-badges">
+                <span class="menu-badge">✔ 動物福利食材</span>
+                <span class="menu-badge">✔ 土地友善農產</span>
+                <span class="menu-badge">✔ 非籠飼雞蛋</span>
+                <span class="menu-badge">✔ 職人現點現做</span>
+              </div>
+            </div>
+            <div class="menu-hero-img-box">
+              <img src="https://duk.tw/JaqrC5.png" alt="Food Lab Kitchen" />
+            </div>
+          </div>
+        </div>
+
+        <!-- 最新餐廳菜單 -->
+        <section class="restaurant-menu" aria-labelledby="restaurant-menu-title">
+          <header class="restaurant-menu-header">
+            <p>DINNER &amp; WEEKEND MENU</p>
+            <h3 id="restaurant-menu-title">對味廚房銀光食驗室菜單</h3>
+            <span>以當季食材與細心烹調，為北投漫行準備一桌溫暖好味道</span>
+          </header>
+
+          <aside class="ai-menu-notice" aria-label="餐點圖片說明">
+            <strong>AI 圖片說明</strong>
+            <span>餐點圖片由 AI 生成，僅供示意；實際餐點內容、擺盤與份量以現場供餐為準。</span>
+          </aside>
+
+          <div class="restaurant-menu-section">
+            <div class="restaurant-menu-category">
+              <h4>義大利麵 <span>Pasta</span></h4>
+            </div>
+            <div class="restaurant-menu-list">
+              <article class="restaurant-menu-item">
+                <img src="menu-tomato-pasta_20260519_205242.jpg" alt="蕃茄臘肉麵" loading="lazy" />
+                <h5>蕃茄臘肉麵</h5>
+                <p>手工大水管麵吸附酸甜蕃茄醬汁，搭配煙燻臘肉，鹹香濃郁。</p>
+              </article>
+              <article class="restaurant-menu-item">
+                <img src="menu-lasagna_20260519_205137.jpg" alt="蕃茄乳酪麵" loading="lazy" />
+                <h5>蕃茄乳酪麵</h5>
+                <p>香甜蕃茄與濃郁乳酪細火燉煮成醬汁，柔滑濃香，是大人小孩都喜愛的經典風味。</p>
+              </article>
+              <article class="restaurant-menu-item">
+                <img src="menu-braised-chicken_20260519_205023.jpg" alt="清炒蕃茄香腸肉麵" loading="lazy" />
+                <h5>清炒蕃茄香腸肉麵</h5>
+                <p>自製香腸肉與蕃茄清炒水管麵，質樸美味，呈現經典義式家常風味。</p>
+              </article>
+              <article class="restaurant-menu-item">
+                <img src="https://taiwankwei.github.io/lifebread/menu-bbq-squid_20260525_142230.png" alt="青醬透抽麵" loading="lazy" />
+                <h5>青醬透抽麵</h5>
+                <p>自製羅勒青醬搭配嫩烤透抽，鮮香交融，是海鮮愛好者不能錯過的風味之選。</p>
+              </article>
+              <article class="restaurant-menu-item">
+                <img src="menu-pesto-pizza_20260519_205320.jpg" alt="青醬乳酪與風乾蕃茄麵" loading="lazy" />
+                <h5>青醬乳酪與風乾蕃茄麵</h5>
+                <p>羅勒青醬融合濃郁乳酪與風乾蕃茄的甘甜，層次分明，清新中帶豐富口感。</p>
+              </article>
+              <article class="restaurant-menu-item">
+                <img src="menu-ratatouille_20260519_205058.jpg" alt="清炒松露野菇麵" loading="lazy" />
+                <h5>清炒松露野菇麵 <em>蛋奶素</em></h5>
+                <p>多種野菇清炒，佐以黑松露提香，香氣溫潤迷人，口感醇厚。</p>
+              </article>
+              <article class="restaurant-menu-item">
+                <img src="menu-salad_20260519_205210.jpg" alt="酒醋時蔬麵" loading="lazy" />
+                <h5>酒醋時蔬麵 <em>全素</em></h5>
+                <p>嚴選時令蔬菜與酒醋快炒，酸香平衡，品嚐蔬食最單純的美好。</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="restaurant-menu-section">
+            <div class="restaurant-menu-category">
+              <h4>燒烤主菜 <span>Main</span></h4>
+            </div>
+            <div class="restaurant-menu-list">
+              <article class="restaurant-menu-item">
+                <img src="https://taiwankwei.github.io/lifebread/menu-bbq-squid_20260525_142230.png" alt="燒烤透抽" loading="lazy" />
+                <h5>燒烤透抽</h5>
+                <p>海洋之心認證透抽，精準掌握火候，口感 Q 彈，展現海洋純粹風味。</p>
+              </article>
+              <article class="restaurant-menu-item">
+                <img src="menu-chiu-fish.png" alt="燒烤鮮魚" loading="lazy" />
+                <h5>燒烤鮮魚</h5>
+                <p>選用嘉義邱家兄弟生態養殖鮮魚，燒烤封存鮮甜，保留食材原味，清新宜人。</p>
+              </article>
+              <article class="restaurant-menu-item">
+                <img src="https://taiwankwei.github.io/lifebread/menu-bbq-chicken-thigh_20260525_142147.png" alt="燒烤雞腿排" loading="lazy" />
+                <h5>燒烤雞腿排</h5>
+                <p>屏東萬金畜牧場「搖滾雞」低溫蒸煮後炙烤，柔嫩多汁，佐自家特調燒烤醬。</p>
+              </article>
+              <article class="restaurant-menu-item">
+                <img src="https://taiwankwei.github.io/lifebread/menu-bbq-duck-leg_20260525_142229.png" alt="油封鴨腿" loading="lazy" />
+                <h5>油封鴨腿</h5>
+                <p>經典法式油封鴨腿，低溫慢煮至外酥內嫩，肉質細緻多汁。</p>
+              </article>
+              <article class="restaurant-menu-item">
+                <img src="https://taiwankwei.github.io/lifebread/menu-garlic-shrimp_20260525_142138.png" alt="蒜味油封蝦" loading="lazy" />
+                <h5>蒜味油封蝦</h5>
+                <p>鮮蝦以蒜香橄欖油低溫油封，肉質彈嫩，蒜味濃郁而不搶鮮甜。</p>
+              </article>
+              <article class="restaurant-menu-item">
+                <img src="menu-curry-beef_20260519_204945.jpg" alt="瑪莎曼咖哩燉牛筋" loading="lazy" />
+                <h5>瑪莎曼咖哩燉牛筋</h5>
+                <p>牛筋以瑪莎曼咖哩慢火燉煮，辛香溫潤，口感柔軟入味。</p>
+              </article>
+            </div>
+          </div>
+
+          <footer class="restaurant-menu-footer">餐點內容依餐廳當日供應為準</footer>
+        </section>
+
+        <!-- 舊版菜單保留供歷史資料使用，不在頁面顯示 -->
+        <div class="buffet-container legacy-menu-content" hidden>
+          <div class="buffet-header">
+            <div class="buffet-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+            </div>
+            <div>
+              <h3 class="buffet-title">菜單Menu</h3>
+              <p class="buffet-subtitle">精選友善食材 · 現場健康烹調</p>
+            </div>
+          </div>
+
+          <div class="buffet-body">
+            
+            <!-- 套餐組合介紹 Banner -->
+            <div style="background: linear-gradient(135deg, var(--emerald-light) 0%, rgba(16, 185, 129, 0.05) 100%); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: var(--radius-lg); padding: 24px; text-align: left; position: relative; overflow: hidden; margin-bottom: 8px;">
+              <div style="position: absolute; right: -20px; top: -20px; font-size: 7rem; opacity: 0.08; transform: rotate(15deg); pointer-events: none;">🍽️</div>
+              <span style="background-color: var(--emerald); color: white; font-size: 0.65rem; font-weight: 700; padding: 4px 10px; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.5px; display: inline-block; margin-bottom: 12px; box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);">舒食套餐組</span>
+              <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--emerald-dark); margin-bottom: 8px;">對味廚房 · 精緻午餐饗宴</h4>
+              <p style="font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+                本行程午餐特別安排享用「舒食套餐組」，使用友善土地與高品質食材，現點現做。每人包含一套完整附餐，您只需在下方（或報名表單）中挑選您喜愛的一道主菜即可。
+              </p>
+              
+              <!-- 附餐明細 Grid -->
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin-top: 8px;">
+                <div style="background: var(--bg-card); padding: 12px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; align-items: center; gap: 8px; box-shadow: var(--shadow-sm);">
+                  <span style="font-size: 1.25rem;">🥗</span>
+                  <div>
+                    <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-primary);">時蔬沙拉</div>
+                    <div style="font-size: 0.62rem; color: var(--text-muted);">新鮮友善生菜</div>
+                  </div>
+                </div>
+                <div style="background: var(--bg-card); padding: 12px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; align-items: center; gap: 8px; box-shadow: var(--shadow-sm);">
+                  <span style="font-size: 1.25rem;">🍲</span>
+                  <div>
+                    <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-primary);">鮮蔬濃湯</div>
+                    <div style="font-size: 0.62rem; color: var(--text-muted);">溫熱健康烹調</div>
+                  </div>
+                </div>
+                <div style="background: var(--bg-card); padding: 12px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; align-items: center; gap: 8px; box-shadow: var(--shadow-sm);">
+                  <span style="font-size: 1.25rem;">🍰</span>
+                  <div>
+                    <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-primary);">精緻甜點</div>
+                    <div style="font-size: 0.62rem; color: var(--text-muted);">手作美味糕點</div>
+                  </div>
+                </div>
+                <div style="background: var(--bg-card); padding: 12px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; align-items: center; gap: 8px; box-shadow: var(--shadow-sm);">
+                  <span style="font-size: 1.25rem;">🥤</span>
+                  <div>
+                    <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-primary);">特調飲品</div>
+                    <div style="font-size: 0.62rem; color: var(--text-muted);">冷熱多樣選擇</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 主菜選擇 Grid -->
+            <div>
+              <div class="menu-category-header" style="margin-bottom: 6px;">
+                <span class="menu-category-icon">🥩</span>
+                <h4 class="menu-category-title">可選主菜 (八選一)</h4>
+                <div class="menu-category-line"></div>
+              </div>
+              <div style="font-size: 0.68rem; color: var(--text-muted); margin-bottom: 20px; font-weight: 600; display: flex; align-items: center; gap: 4px;">
+                💡 圖片是由 AI 生成，實際狀況以現場出餐為準
+              </div>
+              
+              <div class="menu-items-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px;">
+                
+                <!-- 1 -->
+                <div class="menu-item-card" style="display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--border-color); border-radius: var(--radius-lg); background: var(--bg-card); transition: all 0.3s ease; box-shadow: var(--shadow-sm); cursor: default;">
+                  <div class="menu-item-img-box" style="height: 150px; overflow: hidden;">
+                    <img src="menu-braised-chicken_20260519_205023.jpg" alt="燒烤搖滾雞腿排" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+                  </div>
+                  <div class="menu-item-info" style="padding: 16px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 6px;">
+                    <h5 style="font-size: 0.95rem; font-weight: 800; color: var(--text-primary); margin: 0;">燒烤搖滾雞腿排</h5>
+                    <span style="font-size: 0.65rem; background: rgba(16, 185, 129, 0.15); color: var(--emerald-dark); padding: 2px 8px; border-radius: 50px; font-weight: 600; display: inline-block;">鮮嫩多汁 · 人氣推薦</span>
+                  </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="menu-item-card" style="display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--border-color); border-radius: var(--radius-lg); background: var(--bg-card); transition: all 0.3s ease; box-shadow: var(--shadow-sm); cursor: default;">
+                  <div class="menu-item-img-box" style="height: 150px; overflow: hidden;">
+                    <img src="menu-beef-tendon.png" alt="紅酒燴牛筋" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+                  </div>
+                  <div class="menu-item-info" style="padding: 16px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 6px;">
+                    <h5 style="font-size: 0.95rem; font-weight: 800; color: var(--text-primary); margin: 0;">紅酒燴牛筋</h5>
+                    <span style="font-size: 0.65rem; background: rgba(239, 68, 68, 0.15); color: #b91c1c; padding: 2px 8px; border-radius: 50px; font-weight: 600; display: inline-block;">香醇濃郁 · 經典肉品</span>
+                  </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="menu-item-card" style="display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--border-color); border-radius: var(--radius-lg); background: var(--bg-card); transition: all 0.3s ease; box-shadow: var(--shadow-sm); cursor: default;">
+                  <div class="menu-item-img-box" style="height: 150px; overflow: hidden;">
+                    <img src="menu-ratatouille_20260519_205058.jpg" alt="燒烤時蔬 (素食)" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+                  </div>
+                  <div class="menu-item-info" style="padding: 16px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 6px;">
+                    <h5 style="font-size: 0.95rem; font-weight: 800; color: var(--text-primary); margin: 0;">燒烤時蔬 (素食)</h5>
+                    <span style="font-size: 0.65rem; background: rgba(59, 130, 246, 0.15); color: #1d4ed8; padding: 2px 8px; border-radius: 50px; font-weight: 600; display: inline-block;">時令鮮美 · 健康蔬食</span>
+                  </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="menu-item-card" style="display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--border-color); border-radius: var(--radius-lg); background: var(--bg-card); transition: all 0.3s ease; box-shadow: var(--shadow-sm); cursor: default;">
+                  <div class="menu-item-img-box" style="height: 150px; overflow: hidden;">
+                    <img src="menu-chiu-fish.png" alt="燒烤邱家好魚" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+                  </div>
+                  <div class="menu-item-info" style="padding: 16px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 6px;">
+                    <h5 style="font-size: 0.95rem; font-weight: 800; color: var(--text-primary); margin: 0;">燒烤邱家好魚</h5>
+                    <span style="font-size: 0.65rem; background: rgba(139, 92, 246, 0.15); color: #6d28d9; padding: 2px 8px; border-radius: 50px; font-weight: 600; display: inline-block;">在地漁獲 · 精選海鮮</span>
+                  </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="menu-item-card" style="display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--border-color); border-radius: var(--radius-lg); background: var(--bg-card); transition: all 0.3s ease; box-shadow: var(--shadow-sm); cursor: default;">
+                  <div class="menu-item-img-box" style="height: 150px; overflow: hidden;">
+                    <img src="menu-pork.png" alt="燒烤永續豬肉" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+                  </div>
+                  <div class="menu-item-info" style="padding: 16px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 6px;">
+                    <h5 style="font-size: 0.95rem; font-weight: 800; color: var(--text-primary); margin: 0;">燒烤永續豬肉</h5>
+                    <span style="font-size: 0.65rem; background: rgba(245, 158, 11, 0.15); color: #b45309; padding: 2px 8px; border-radius: 50px; font-weight: 600; display: inline-block;">友善農產 · 在地食材</span>
+                  </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="menu-item-card" style="display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--border-color); border-radius: var(--radius-lg); background: var(--bg-card); transition: all 0.3s ease; box-shadow: var(--shadow-sm); cursor: default;">
+                  <div class="menu-item-img-box" style="height: 150px; overflow: hidden;">
+                    <img src="menu-shrimp.png" alt="蒜味油封蝦" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+                  </div>
+                  <div class="menu-item-info" style="padding: 16px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 6px;">
+                    <h5 style="font-size: 0.95rem; font-weight: 800; color: var(--text-primary); margin: 0;">蒜味油封蝦</h5>
+                    <span style="font-size: 0.65rem; background: rgba(236, 72, 153, 0.15); color: #be185d; padding: 2px 8px; border-radius: 50px; font-weight: 600; display: inline-block;">香蒜濃郁 · 特色海鮮</span>
+                  </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="menu-item-card" style="display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--border-color); border-radius: var(--radius-lg); background: var(--bg-card); transition: all 0.3s ease; box-shadow: var(--shadow-sm); cursor: default;">
+                  <div class="menu-item-img-box" style="height: 150px; overflow: hidden;">
+                    <img src="menu-duck-leg.png" alt="燒烤油封履歷鴨腿" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+                  </div>
+                  <div class="menu-item-info" style="padding: 16px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 6px;">
+                    <h5 style="font-size: 0.95rem; font-weight: 800; color: var(--text-primary); margin: 0;">燒烤油封履歷鴨腿</h5>
+                    <span style="font-size: 0.65rem; background: rgba(20, 184, 166, 0.15); color: #0f766e; padding: 2px 8px; border-radius: 50px; font-weight: 600; display: inline-block;">產銷履歷 · 精選肉品</span>
+                  </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="menu-item-card" style="display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--border-color); border-radius: var(--radius-lg); background: var(--bg-card); transition: all 0.3s ease; box-shadow: var(--shadow-sm); cursor: default;">
+                  <div class="menu-item-img-box" style="height: 150px; overflow: hidden;">
+                    <img src="menu-wagyu-steak.png" alt="和牛牛排" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+                  </div>
+                  <div class="menu-item-info" style="padding: 16px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 6px;">
+                    <h5 style="font-size: 0.95rem; font-weight: 800; color: var(--text-primary); margin: 0;">和牛牛排</h5>
+                    <span style="font-size: 0.65rem; background: rgba(234, 179, 8, 0.15); color: #a16207; padding: 2px 8px; border-radius: 50px; font-weight: 600; display: inline-block;">極致奢華 · 頂級饗宴</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 導航指引 -->
+        <div class="directions-card">
+          <h3 class="directions-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+            餐廳導航指引
+          </h3>
+          
+          <div class="directions-destination-box">
+            <p class="directions-dest-label">📍 目的地地址：</p>
+            <p class="directions-dest-val">台北市北投區三合街一段119號1樓 (對味廚房銀光食驗室)</p>
+          </div>
+
+          <div class="directions-routes-grid">
+            
+            <a href="https://www.google.com/maps/dir/奇岩捷運站/對味廚房銀光食驗室" target="_blank" rel="noopener noreferrer" class="direction-route-item">
+              <div>
+                <p class="direction-route-name">奇岩捷運站 (最佳起點)</p>
+                <p class="direction-route-time">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  步行約 5 - 8 分鐘
+                </p>
+              </div>
+              <div class="direction-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </div>
+            </a>
+
+            <a href="https://www.google.com/maps/dir/新北投捷運站/對味廚房銀光食驗室" target="_blank" rel="noopener noreferrer" class="direction-route-item">
+              <div>
+                <p class="direction-route-name">新北投捷運站</p>
+                <p class="direction-route-time">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  步行約 10 - 12 分鐘
+                </p>
+              </div>
+              <div class="direction-arrow">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <!-- ─── TAB: ECO ─── -->
+      <div id="tab-eco" class="tab-content">
+        <div class="card" style="border-radius: var(--radius-xl); overflow:hidden;">
+          <div class="eco-header">
+            <svg class="eco-header-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            <p class="eco-header-quote">「 享受樹比人多的靜謐自在，伴隨小河悠然流淌的舒暢時光 」</p>
+          </div>
+          
+          <div class="eco-body">
+            
+            <section>
+              <h3 class="eco-section-title">第一部分｜奇岩重劃區：都市中的生態綠洲</h3>
+              <p class="eco-text eco-text-left">
+                在寸土寸金的臺北市，竟然隱藏著一處佔地約 17 公頃的生態綠洲！這就是北投奇岩重劃區。這裡西倚磺港溪生態藍帶，東臨軍艦岩親山步道，區內高覆綠率達 60%。為了保護大屯山及軍艦岩的視覺景觀廊道，全區實施嚴格的 32 公尺限高與 45% 低建蔽率，提供了優質的日照、寬敞棟距與開闊視野，是極為罕見的人與都市自然共榮的生態模範社區。
+              </p>
+            </section>
+
+            <section style="border-top: 1px solid var(--border-color); padding-top: 32px;">
+              <h3 class="eco-section-title">第二部分｜磺港溪再造：流動的生態藍帶</h3>
+              <p class="eco-text eco-text-left" style="margin-bottom: 24px;">
+                貫穿此區的磺港溪，近年推動了跨世代的「溪流再造與親水計畫」。這項綠帶活化工程將舊式三面光的排水防洪溝渠，逐步改建為蜿蜒多樣的自然生態親水廊道。在溪畔散步，不僅可以體驗潺潺水聲，還能看見翠鳥與白鷺鷥的蹤影，是一條讓台北人親水、親自然的舒活廊道。
+              </p>
+
+              <div class="eco-video-grid">
+                
+                <!-- 影片一 -->
+                <div class="eco-video-card">
+                  <a href="https://www.youtube.com/watch?v=RoJQjmk4CrM" target="_blank" rel="noopener noreferrer" class="video-thumbnail-btn">
+                    <img src="image_7635a9.png" alt="北投奇岩重劃區生態巡禮" />
+                    <div class="play-btn-circle">
+                      <svg width="24" height="24" fill="white" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    </div>
+                    <span class="watch-yt-badge">前往 YouTube 觀看</span>
+                  </a>
+                  <p class="video-card-title">北投奇岩重劃區生態巡禮</p>
+                </div>
+
+                <!-- 影片二 -->
+                <div class="eco-video-card">
+                  <a href="https://www.youtube.com/watch?v=aubzV9YQ7rs" target="_blank" rel="noopener noreferrer" class="video-thumbnail-btn">
+                    <img src="https://img.youtube.com/vi/aubzV9YQ7rs/maxresdefault.jpg" alt="磺港溪再造完工紀錄" />
+                    <div class="play-btn-circle">
+                      <svg width="24" height="24" fill="white" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    </div>
+                    <span class="watch-yt-badge">前往 YouTube 觀看</span>
+                  </a>
+                  <p class="video-card-title">磺港溪與磺港公園再造紀錄</p>
+                </div>
+
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ─── TAB: ATTRACTIONS ─── -->
+      <div id="tab-attractions" class="tab-content">
+        <div class="attractions-wrapper">
+          <h2 class="attractions-title">🗺️ 北投來走走 · 景點地圖</h2>
+          <div class="attractions-map-box">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1hdGgOfXGhCfZNb5TYRCTyrq6fOnKMF0&ehbc=2E312F" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ═══ WEATHER & BIBLE WIDGETS ═══ -->
+    <div class="widgets-grid">
+
+      <!-- 即時天氣 widget -->
+      <div class="widget-card">
+        <div class="widget-header-blue">
+          <div class="widget-header-row">
+            <span class="widget-tag">即時天氣 · 北投奇岩</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+          </div>
+          <div class="weather-main-row">
+            <span id="w-emoji" class="weather-emoji">⏳</span>
+            <div>
+              <div id="w-temp" class="weather-temp">--°C</div>
+              <div class="weather-meta-row">
+                <span id="w-desc" class="weather-desc">資料載入中...</span>
+                <span id="w-feel" class="weather-feel"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="weather-grid-details">
+          <div class="weather-detail-item">
+            <p class="weather-detail-label">相對濕度</p>
+            <p id="w-humidity" class="weather-detail-val">--%</p>
+          </div>
+          <div class="weather-detail-item">
+            <p class="weather-detail-label">當前風速</p>
+            <p id="w-wind" class="weather-detail-val">-- km/h</p>
+          </div>
+        </div>
+        <p id="w-time" class="weather-update-time">資料來源：Open-Meteo API</p>
+      </div>
+
+      <!-- 聖經金句 widget -->
+      <div class="widget-card">
+        <div class="widget-header-amber">
+          <div class="widget-header-row">
+            <span class="widget-tag">今日祝福金句</span>
+            <span style="font-size:1.2rem;">✝️</span>
+          </div>
+        </div>
+        <div class="bible-body">
+          <p id="bible-text" class="bible-quote">“ 載入祝福金句中... ”</p>
+          <div class="bible-footer">
+            <span id="bible-ref" class="bible-ref">— 讀經中</span>
+            <button onclick="loadBibleVerse()" class="refresh-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+              更換金句
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ═══ GUIDELINES SECTION ═══ -->
+    <section class="guidelines-section">
+      <div class="guidelines-header-divider">
+        <div class="divider-line"></div>
+        <h2 class="divider-text">探索必讀指南 / Guidelines</h2>
+        <div class="divider-line"></div>
+      </div>
+      
+      <div class="guidelines-grid">
+        
+        <div class="guideline-card guideline-emerald">
+          <div class="guideline-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+          </div>
+          <h4 class="guideline-title">漫遊裝備</h4>
+          <p class="guideline-desc">建議穿著舒適且防滑的休閒運動鞋</p>
+        </div>
+
+        <div class="guideline-card guideline-amber">
+          <div class="guideline-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h4 class="guideline-title">飲水補給</h4>
+          <p class="guideline-desc">隨身攜帶的飲用水隨時補給</p>
+        </div>
+
+        <div class="guideline-card guideline-rose">
+          <div class="guideline-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h4 class="guideline-title">防曬遮陽</h4>
+          <p class="guideline-desc">請做好充足的防曬準備，並配戴遮陽帽或攜帶防曬傘</p>
+        </div>
+
+        <div class="guideline-card guideline-blue">
+          <div class="guideline-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"/></svg>
+          </div>
+          <h4 class="guideline-title">離線地圖</h4>
+          <p class="guideline-desc">本頁所附的路線地圖可了解漫遊方向</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <p class="footer-quote">「 聽見生活的頻率，遇見心靈的風景 」</p>
+    <div class="footer-meta">
+      <span>EST. 2026.11.28</span>
+      <span>•</span>
+      <span>BEITOU STROLL</span>
+      <span>•</span>
+      <span>北投來走走</span>
+    </div>
+  </footer>
+
+  <!-- ═══ CHAT WIDGET ═══ -->
+  <div class="chat-widget-wrapper">
+    
+    <div id="chat-panel" class="chat-panel">
+      
+      <!-- Chat Header -->
+      <div class="chat-header">
+        <div class="chat-bot-info">
+          <div class="chat-header-icon">
+            <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div>
+            <p class="chat-header-name">北投來走走小助手</p>
+            <p class="chat-header-status">AI 旅遊顧問 · 線上諮詢中</p>
+          </div>
+        </div>
+        <button id="chat-close" class="chat-close-btn" aria-label="關閉聊天小助手">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <!-- Chat Messages -->
+      <div id="chat-messages" class="chat-messages-container">
+        <!-- Welcoming msg -->
+        <div class="chat-msg-row bot">
+          <div class="chat-msg-bubble">
+            您好！我是您的「北投來走走」旅遊小助手。今天想去哪裡探索呢？不論是步道健行、親子遊玩公園，還是享用銀光食驗室的美味主菜，我都可以為您解答喔！✨
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Input -->
+      <div class="chat-input-bar">
+        <input id="chat-input" type="text" class="chat-input-field" placeholder="請輸入您的旅遊問題..." />
+        <button id="chat-send" class="chat-send-btn" aria-label="發送訊息">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Floating Toggle Button -->
+    <button id="chat-toggle" class="chat-toggle-trigger" aria-label="打開聊天小助手">
+      <svg id="chat-toggle-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <!-- Chat message icon -->
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+    </button>
+
+  <!-- ═══ REGISTRATION MODAL ═══ -->
+  <div id="register-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">活動線上報名</h3>
+        <button id="modal-close" class="modal-close-btn" aria-label="關閉報名視窗">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <form id="register-form" onsubmit="event.preventDefault(); handleRegisterSubmit();">
+        <div class="form-group">
+          <label for="reg-name" class="form-label">姓名</label>
+          <input type="text" id="reg-name" class="form-input" placeholder="請輸入您的真實姓名" required />
+        </div>
+        <div class="form-group">
+          <label for="reg-count" class="form-label">人數</label>
+          <input type="number" id="reg-count" class="form-input" min="1" max="100" value="1" required />
+        </div>
+
+        <!-- 幾大幾小 -->
+        <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
+          <div class="form-group-sm" style="margin-bottom: 0;">
+            <label for="reg-adults" class="form-label" style="font-size: 0.8rem; margin-bottom: 6px;">大人人數</label>
+            <input type="number" id="reg-adults" class="form-input" min="0" value="1" required style="padding: 10px 14px;" />
+          </div>
+          <div class="form-group-sm" style="margin-bottom: 0;">
+            <label for="reg-children" class="form-label" style="font-size: 0.8rem; margin-bottom: 6px;">小孩人數</label>
+            <input type="number" id="reg-children" class="form-input" min="0" value="0" required style="padding: 10px 14px;" />
+          </div>
+        </div>
+
+        <!-- 小孩條件詢問區區 -->
+        <div id="child-details-section" style="display: none; margin-bottom: 20px; background: var(--bg-secondary); border-left: 3px solid var(--emerald); padding: 16px; border-radius: 0 var(--radius-md) var(--radius-md) 0; border-top: 1px solid var(--border-color); border-right: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+          <h4 style="font-size: 0.85rem; font-weight: 700; margin-bottom: 12px; color: var(--emerald-dark);">👶 孩童椅需求</h4>
+          <div class="form-group-sm" style="margin-bottom: 0; display: flex; flex-direction: column; gap: 4px;">
+            <label for="reg-child-chair" style="font-size: 0.72rem; font-weight: 700; color: var(--text-secondary);">需要孩童椅嗎？</label>
+            <select id="reg-child-chair" class="form-input" style="padding: 8px 12px; font-size: 0.85rem; background-color: var(--bg-card);">
+              <option value="否">不需要孩童椅</option>
+              <option value="1">需要 1 張</option>
+              <option value="2">需要 2 張</option>
+              <option value="3">需要 3 張</option>
+              <option value="4">需要 4 張</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- 午餐點餐 -->
+        <div id="menu-ordering-section" style="margin-bottom: 20px; background: var(--bg-secondary); padding: 16px; border-radius: var(--radius-md); border: 1px dashed var(--border-color);">
+          <h4 style="font-size: 0.88rem; font-weight: 800; margin-bottom: 4px; color: var(--emerald-dark); display: flex; justify-content: space-between; align-items: center;">
+            <span>🍽️ 午餐餐點選擇</span>
+            <span id="menu-selected-status" style="font-size: 0.75rem; font-weight: 600; color: var(--emerald-dark);">已選 0 / 1 份</span>
+          </h4>
+          <div style="margin-bottom: 8px; padding: 8px; background-color: rgba(16, 185, 129, 0.1); border-radius: var(--radius-sm); border-left: 3px solid var(--emerald); font-size: 0.68rem; color: var(--emerald-dark); font-weight: 600; line-height: 1.4;">
+            💡 請依報名總人數選擇餐點；實際內容依餐廳當日供應為準。
+          </div>
+          <p class="config-help" style="margin-bottom: 12px; font-size: 0.65rem; color: var(--text-muted);">請依報名人數點選主餐份數：</p>
+          
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+              <span style="font-weight: 600;">🍝 蕃茄臘肉麵</span>
+              <input type="number" class="menu-item-qty form-input" data-dish="蕃茄臘肉麵" min="0" value="0" style="width: 70px; padding: 6px 10px; font-size: 0.8rem; text-align: center; background-color: var(--bg-card);" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+              <span style="font-weight: 600;">🍅 蕃茄乳酪麵</span>
+              <input type="number" class="menu-item-qty form-input" data-dish="蕃茄乳酪麵" min="0" value="0" style="width: 70px; padding: 6px 10px; font-size: 0.8rem; text-align: center; background-color: var(--bg-card);" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+              <span style="font-weight: 600;">🍝 清炒蕃茄香腸肉麵</span>
+              <input type="number" class="menu-item-qty form-input" data-dish="清炒蕃茄香腸肉麵" min="0" value="0" style="width: 70px; padding: 6px 10px; font-size: 0.8rem; text-align: center; background-color: var(--bg-card);" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+              <span style="font-weight: 600;">🦑 青醬透抽麵</span>
+              <input type="number" class="menu-item-qty form-input" data-dish="青醬透抽麵" min="0" value="0" style="width: 70px; padding: 6px 10px; font-size: 0.8rem; text-align: center; background-color: var(--bg-card);" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+              <span style="font-weight: 600;">🌿 青醬乳酪與風乾蕃茄麵</span>
+              <input type="number" class="menu-item-qty form-input" data-dish="青醬乳酪與風乾蕃茄麵" min="0" value="0" style="width: 70px; padding: 6px 10px; font-size: 0.8rem; text-align: center; background-color: var(--bg-card);" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+              <span style="font-weight: 600;">🍄 清炒松露野菇麵（蛋奶素）</span>
+              <input type="number" class="menu-item-qty form-input" data-dish="清炒松露野菇麵（蛋奶素）" min="0" value="0" style="width: 70px; padding: 6px 10px; font-size: 0.8rem; text-align: center; background-color: var(--bg-card);" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+              <span style="font-weight: 600;">🥬 酒醋時蔬麵（全素）</span>
+              <input type="number" class="menu-item-qty form-input" data-dish="酒醋時蔬麵（全素）" min="0" value="0" style="width: 70px; padding: 6px 10px; font-size: 0.8rem; text-align: center; background-color: var(--bg-card);" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+              <span style="font-weight: 600;">🦑 燒烤透抽</span>
+              <input type="number" class="menu-item-qty form-input" data-dish="燒烤透抽" min="0" value="0" style="width: 70px; padding: 6px 10px; font-size: 0.8rem; text-align: center; background-color: var(--bg-card);" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+              <span style="font-weight: 600;">🐟 燒烤鮮魚</span>
+              <input type="number" class="menu-item-qty form-input" data-dish="燒烤鮮魚" min="0" value="0" style="width: 70px; padding: 6px 10px; font-size: 0.8rem; text-align: center; background-color: var(--bg-card);" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+              <span style="font-weight: 600;">🍗 燒烤雞腿排</span>
+              <input type="number" class="menu-item-qty form-input" data-dish="燒烤雞腿排" min="0" value="0" style="width: 70px; padding: 6px 10px; font-size: 0.8rem; text-align: center; background-color: var(--bg-card);" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+              <span style="font-weight: 600;">🦆 油封鴨腿</span>
+              <input type="number" class="menu-item-qty form-input" data-dish="油封鴨腿" min="0" value="0" style="width: 70px; padding: 6px 10px; font-size: 0.8rem; text-align: center; background-color: var(--bg-card);" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+              <span style="font-weight: 600;">🍤 蒜味油封蝦</span>
+              <input type="number" class="menu-item-qty form-input" data-dish="蒜味油封蝦" min="0" value="0" style="width: 70px; padding: 6px 10px; font-size: 0.8rem; text-align: center; background-color: var(--bg-card);" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem;">
+              <span style="font-weight: 600;">🍛 瑪莎曼咖哩燉牛筋</span>
+              <input type="number" class="menu-item-qty form-input" data-dish="瑪莎曼咖哩燉牛筋" min="0" value="0" style="width: 70px; padding: 6px 10px; font-size: 0.8rem; text-align: center; background-color: var(--bg-card);" />
+            </div>
+          </div>
+        </div>
+        
+        <button type="submit" id="reg-submit" class="btn-primary btn-emerald" style="margin-top: 24px; background: var(--emerald);">確認送出</button>
+        
+        <!-- Status messages -->
+        <div id="reg-status" class="reg-status-box" style="display: none;"></div>
+
+        <!-- Firebase Config Settings (Optional/Collapsible) -->
+        <div class="firebase-config-section" style="display: none;">
+          <button type="button" class="config-toggle-btn" onclick="toggleConfigSection()">
+            <span>⚙️ Firebase 資料庫設定</span>
+            <svg id="config-arrow" class="config-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div id="firebase-config-fields" class="config-fields-container" style="display: none;">
+            <p class="config-help">配置您的 Firebase Web App 金鑰，報名資料將會即時寫入您的 Firestore：</p>
+            <div class="form-group-sm">
+              <label for="fb-apikey">API Key</label>
+              <input type="text" id="fb-apikey" value="AIzaSyCJkm_eA-BJtFzbxO1CyxwK8PbmgHmqq7U" placeholder="AIzaSy..." />
+            </div>
+            <div class="form-group-sm">
+              <label for="fb-projectid">Project ID</label>
+              <input type="text" id="fb-projectid" value="mydesignproject-f22d5" placeholder="mydesignproject-f22d5" />
+            </div>
+            <div class="form-group-sm">
+              <label for="fb-appid">App ID</label>
+              <input type="text" id="fb-appid" value="1:940076219394:web:0a8a4b738359378e0c7b1b" placeholder="1:1234:web:abcd" />
+            </div>
+            <button type="button" class="btn-sm" onclick="saveFirebaseConfig()">儲存 Firebase 設定</button>
+            <button type="button" class="btn-sm btn-clear" onclick="clearFirebaseConfig()">清除設定</button>
+          </div>
+        </div>
+
+        <!-- Email Notification Settings (Collapsible) -->
+        <div class="firebase-config-section" style="display: none; margin-top: 16px;">
+          <button type="button" class="config-toggle-btn" onclick="toggleEmailConfigSection()">
+            <span>📧 Email 通知設定 (自動發送)</span>
+            <svg id="email-config-arrow" class="config-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div id="email-config-fields" class="config-fields-container" style="display: none;">
+            <p class="config-help">報名成功時，系統將自動即時發送通知至：</p>
+            <div style="font-size: 0.72rem; line-height: 1.5; margin-bottom: 12px; color: var(--text-primary); font-family: var(--font-sans);">
+              • taiwan.kwei@ceci.com.tw (主收件)<br>
+              • g0306@ceci.com.tw, taiwan.kwei@gmail.com (CC)
+            </div>
+            
+            <div class="form-group-sm" style="border-top: 1px dashed var(--border-color); padding-top: 10px;">
+              <label for="gas-url"><strong>方法一：Google Apps Script (推薦，免驗證信)</strong></label>
+              <input type="text" id="gas-url" placeholder="請貼上部署後取得的 Web App URL" />
+              <p class="config-help" style="margin-top: 4px; font-size: 0.62rem;">
+                💡 使用專案目錄下的 <code>GoogleAppsScript.js</code> 部署為 Google 網頁應用程式，即可即時發送，不需驗證信。
+              </p>
+            </div>
+            
+            <div style="margin-top: 10px; display: flex; gap: 8px;">
+              <button type="button" class="btn-sm" onclick="saveEmailConfig()">儲存 Email 設定</button>
+              <button type="button" class="btn-sm btn-clear" onclick="clearEmailConfig()">清除設定</button>
+            </div>
+
+            <p class="config-help" style="border-top: 1px solid var(--border-color); padding-top: 8px; margin-top: 12px;">
+              ⚠️ <strong>方法二：預設 FormSubmit (免設定，首次需點驗證信)</strong><br>
+              若不設定 Google 網址，系統預設使用 FormSubmit。但<strong>首次</strong>提交後，主收件人必須去信箱點擊一次啟動連結，後續才能收到報名通知信。
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Firebase Compat SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
