@@ -907,8 +907,11 @@ async function handleRegisterSubmit() {
             _template: 'box'
           })
         });
-        if (response.ok) {
+        const result = await response.json().catch(() => ({}));
+        if (response.ok && (result.success === true || result.success === 'true')) {
           emailMsg = '，且已發送通知信 (請確認主信箱是否已點擊 FormSubmit 驗證連結)';
+        } else if (String(result.message || '').toLowerCase().includes('activation')) {
+          emailMsg = '，但通知服務尚待主要信箱點擊啟用連結';
         } else {
           emailMsg = '，但 Email 通知發送失敗';
         }
