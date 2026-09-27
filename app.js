@@ -662,6 +662,7 @@ function setupFormListeners() {
     // Main Course
     let selectedSum = 0;
     menuItemQties.forEach(input => {
+      input.max = totalCount;
       selectedSum += parseInt(input.value) || 0;
     });
 
@@ -726,6 +727,13 @@ function setupFormListeners() {
 
   // When total count is edited directly
   regCount.addEventListener('input', () => {
+    const totalCount = parseInt(regCount.value) || 0;
+    let remaining = totalCount;
+    menuItemQties.forEach(input => {
+      const qty = Math.min(parseInt(input.value) || 0, remaining);
+      input.value = qty;
+      remaining -= qty;
+    });
     updateMenuStatus();
   });
 
@@ -734,6 +742,12 @@ function setupFormListeners() {
     input.addEventListener('input', () => {
       let val = parseInt(input.value) || 0;
       if (val < 0) input.value = 0;
+      const totalCount = parseInt(regCount.value) || 0;
+      const selectedElsewhere = Array.from(menuItemQties)
+        .filter(other => other !== input)
+        .reduce((sum, other) => sum + (parseInt(other.value) || 0), 0);
+      const available = Math.max(0, totalCount - selectedElsewhere);
+      if (val > available) input.value = available;
       updateMenuStatus();
     });
   });
@@ -789,13 +803,8 @@ async function handleRegisterSubmit() {
   });
 
   if (selectedSum !== count) {
-    if (children > 0 && !hasWarnedMismatch) {
-      hasWarnedMismatch = true;
-      const wantToFix = confirm("⚠️ 您的主餐點餐數量與報名總人數不一致。\n\n請問您需要補點嗎？\n- 點擊【OK】（要補點）：返回修改點餐數量\n- 點擊【Cancel】（不需要）：直接送出報名並進入下一步");
-      if (wantToFix) {
-        return; // Return to form for adjustment
-      }
-    }
+    showRegStatus('error', `❌ 每人限選一份主餐；目前選了 ${selectedSum} 份，必須與報名總人數 ${count} 人一致！`);
+    return;
   }
 
   showRegStatus('info', '⏳ 正在提交報名資料，請稍候...');
